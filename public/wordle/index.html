@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Wordle</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="menu-container">
+    <h1 class="title-wordle">Wordle</h1>
+    <div class="title-buttons">
+      <button class="hover-grey" onmousedown="lightDark()">&#9681;</button>
+      <button class="hover-grey" onmousedown="hint()">&#63;</button>
+      <button class="hover-grey" onmousedown="instructions()">&#9432;</button>
+      <a href="/"><button class="hover-grey" onmousedown="backtoportfolio()">&#8592;</button></a>
+    </div>
+  </div>
+  <div class="game-container" id="gameContainer">
+    <div id="game"></div>
+  </div>
+  <script src="./wordle.js"></script>
+  <div class="button-container">
+    <button class="button-start-over" onmousedown="startOver()">Start Over</button>
+  </div>
+  <div id="footer" class="footer">
+    <p>&#169 Saaed Darwish 2023</p>
+  </div>
+</body>
+
+</html>

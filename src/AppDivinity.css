@@ -1,0 +1,595 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  color: white; /* Set the default text color for the entire page */
+  font-family: 'Gowun Batang', serif;
+  background: linear-gradient(55deg, #2c015d 0%, #110222 51%, #032027 85%);
+}
+
+.gradient-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Set height to auto */
+  background: linear-gradient(55deg, #2c015d 0%, #05303b 51%, #2c015d 85%);
+  background-size: 200% 100%;
+  animation: gradientScroll 20s cubic-bezier(0.3, 0.3, 0.3, 0.3) infinite;
+  overflow: hidden;
+  z-index: -1;
+}
+
+@keyframes gradientScroll {
+  0%, 100% {
+    background-position: 100% 0;
+  }
+  50% {
+    background-position: 0 0;
+  }
+}
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  font-size: 100px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  font-family: 'UnifrakturMaguntia', cursive;
+  /* color: rgb(0, 124, 191); */
+  text-shadow: 0 0 10px rgb(49, 4, 88), 0 0 20px goldenrod, 0 0 30px rgb(136, 0, 255);
+}
+
+@keyframes flicker {
+  0%, 100% {
+      text-shadow:
+          0 0 10px rgb(136, 0, 255), /* Brighter and larger */
+          0 0 20px rgb(94, 2, 171), /* Brighter and larger */
+          0 0 30px rgb(49, 4, 88), /* Brighter and larger */
+          0 0 40px rgb(26, 20, 64), /* Brighter and larger */
+          0 0 50px #05303b, /* Brighter and larger */
+          0 0 60px rgb(34, 48, 77), /* Brighter and larger */
+          0 0 70px rgb(136, 0, 255); /* Brighter and larger */
+  }
+  50% {
+      text-shadow:
+          0 0 20px rgb(136, 0, 255), /* Brighter and larger */
+          0 0 30px rgb(49, 4, 88), /* Brighter and larger */
+          0 0 40px #05303b; /* Brighter and larger */
+  }
+}
+
+.titleText {
+  color: rgb(236, 215, 255);
+  text-shadow: 
+      0 0 10px rgb(136, 0, 255),
+      0 0 20px rgb(94, 2, 171),
+      0 0 30px rgb(49, 4, 88),
+      0 0 40px rgb(26, 20, 64),
+      0 0 50px #05303b,
+      0 0 60px rgb(34, 48, 77),
+      0 0 70px rgb(136, 0, 255);
+  animation: flicker 1.5s infinite alternate;
+}
+
+.horizontal-slider {
+  width: 100%;
+  max-width: 500px;
+  height: 50px;
+  margin: auto;
+}
+.example-thumb {
+  cursor: pointer;
+  position: absolute;
+  z-index: 100;
+  background: #ffffff;
+  border: 5px solid #883cfbcd;
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0 0 2px 0 rgb(0 0 0 / 44%);
+}
+.example-thumb.active {
+  background-color: grey;
+}
+.example-track {
+  position: relative;
+  background: #ddd;
+}
+.example-track.example-track-0 {
+  background: #c197ffcd;
+}
+.horizontal-slider .example-track {
+  top: 20px;
+  height: 4px;
+}
+.horizontal-slider .example-thumb {
+  top: 17px;
+  width: 10px;
+  outline: none;
+  height: 10px;
+  line-height: 38px;
+}
+
+.link:hover {
+  color: rgb(160, 37, 121); /* Change color to blue on hover */
+}
+.link {
+  color: rgb(157, 182, 255);
+}
+
+.navlink:hover{
+  color: rgb(157, 182, 255);
+}
+
+.slider-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #5500e7;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+.post-button {
+  padding: 10px 20px;
+  color: #5500e7;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.tos-button {
+  padding: 10px 20px;
+  background-color: #5500e7;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  margin-left: calc(50% - 20px);
+}
+
+.submit-button:hover {
+  background-color:#057e93;
+}
+
+.start-button {
+  padding: 10px 20px;
+  background-color:#057e93;
+  color:white;
+  border: white 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  justify-items: center;
+  align-items: center;
+}
+
+.start-button:hover {
+  background-color: white;
+  color: #057e93;
+  
+}
+.post-button:hover {
+  background-color:#057e93;
+  color:white;
+}
+.slider-form {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+.terms-container {
+  position: fixed;
+  top: 10%;
+  left: 25%;
+  color: #032027;
+  margin-bottom: 20px;
+  width: 50%;
+  height: 75%;
+  padding: 50px;
+  background-color: white;
+  z-index: 2000;
+  overflow-y: scroll;
+}
+
+.terms-of-service {
+  color: #032027;
+}
+
+.tos-button-container {
+  margin-top: 5px;
+}
+
+.register-form {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.register-input {
+  padding: 25px;
+}
+
+.register-button {
+  margin-top: 50px;
+  padding: 10px 20px;
+  background-color: #7b1296;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+}
+
+.dropdown-item-hover {
+  color: white;
+  width:100%;
+  text-align:center;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+.dropdown-item-hover:hover {
+  background-color: #7b1296;
+  color: white;
+}
+
+
+
+/* Customizing the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.10); /* Main color for the track */
+}
+
+/* Customizing the scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.50); /* Slightly more visible color for the thumb */
+  border-radius: 10px; /* Optional: adds rounded corners to the scrollbar thumb */
+}
+
+/* Customizing the scrollbar width */
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  height: 8px; /* Height of the scrollbar for horizontal scrolling */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin; /* Can be "auto", "thin", or "none" */
+  scrollbar-color: rgba(255, 255, 255, 0.50) rgba(255, 255, 255, 0.10); /* thumb and track color */
+}
+
+.list-group-item:hover {
+  background-color:rgb(160, 37, 121); /* Set the background color on hover */
+}
+
+.cardContainer {
+  height: auto;
+  width: 100%;
+  border: 1px solid #000; /* Replace with your desired border properties */
+  border-radius: 10px; /* Adjust the radius to make the corners more or less rounded */
+  text-align: center; /* Aligns text content horizontally in the center */
+  padding: 20px; /* Add padding to the container as needed */
+  margin: 20px;
+  color:black;
+  background-color: white;
+  width:90%
+}
+
+.searchContainer {
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  display: flex;
+  margin: 4px, 4px;
+  padding: 4px;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+  text-align: justify;
+  width:100%;
+}
+.align-center{
+  margin-left:80px;
+  margin-right:80px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+
+.adminbutton{
+  color: black;
+  cursor: 'pointer';
+  height:40px;
+  margin-right: 8px;
+  width: 100px;
+}
+
+.deletebutton{
+  color: black;
+  cursor: 'pointer';
+  height:40px;
+  margin-right: 8px;
+  width: 100px;
+}
+.deleteButton {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 16px; /* Adjust font size as needed */
+}
+.adminbutton:hover{
+  background-color: grey;
+  color:white;
+}
+
+.deletebutton:hover{
+  background-color: red;
+  color:white;
+}
+
+.deleteButton:hover {
+  text-shadow: 0 0 5px red; /* Adjust the shadow size and color as needed */
+}
+
+.modifybutton{
+  background:grey;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: 'pointer';
+}
+.modifybutton:hover{
+  background-color: purple;
+}
+
+.deity-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  overflow-x: auto;
+  width: 100%;
+  min-width: 1525px
+}
+
+.deity-profile {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('../public/Images/deityProfileBackground.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 1776px;
+  min-width: 1525px;
+  max-width: 1530px;
+  margin: auto; /* Centers the profile in the container */
+  padding-top: 575px;
+}
+
+.deity-profile-image {
+  height: 175px;
+  width: 175px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  text-align: center;
+}
+
+.deity-profile-name {
+  font-size: 77px;
+  font-family: 'UnifrakturMaguntia', cursive;
+  color: rgb(236, 215, 255);
+  text-shadow: 
+      0 0 10px rgb(136, 0, 255),
+      0 0 20px rgb(94, 2, 171),
+      0 0 30px rgb(49, 4, 88),
+      0 0 40px rgb(26, 20, 64),
+      0 0 50px #05303b,
+      0 0 60px rgb(34, 48, 77),
+      0 0 70px rgb(136, 0, 255);
+  animation: flicker 1.5s infinite alternate;
+  margin-bottom: -10px;
+}
+
+.deity-profile-source-universe {
+  font-size: medium;
+}
+
+.deity-profile-description-attributes-container {
+  display: flex;
+  height: 415px;
+  min-height: 150px;
+  margin-top: 330px;
+  color: #000;
+  font-size: 15.5px;
+}
+
+.deity-profile-attributes {
+  flex: 1;
+  color: #000;
+}
+
+.deity-profile-description {
+  flex: 0.45;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.deity-profile-description::-webkit-scrollbar {
+  display: none;
+}
+
+.deity-profile-description-title {
+  text-align: center;
+  font-weight: bold;
+  color: #000; /* Or any color you prefer */
+  padding: 5% 0; /* Space above and below the title */
+  font-size: 40px;
+}
+
+.searchBar {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+}
+
+#searchQueryInput {
+  width: 100%;
+  height: 2.8rem;
+  background: #f5f5f5;
+  outline: none;
+  border: none;
+  border-radius: 1.625rem;
+  padding: 0 3.5rem 0 1.5rem;
+  font-size: 1rem;
+}
+
+#searchQuerySubmit {
+  width: 3.5rem;
+  height: 2.8rem;
+  margin-left: -3.5rem;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#searchQuerySubmit:hover {
+  cursor: pointer;
+  font-weight: bolder;
+  color:#9b9bf3;
+}
+
+.forum-center-container{
+  margin-left:80px;
+  margin-right:80px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  width: 60%;
+  min-width:fit-content;
+}
+
+.threadCardContainer {
+  height: auto;
+  /* border: 1px solid #000; Replace with your desired border properties */
+  border-radius: 10px; /* Adjust the radius to make the corners more or less rounded */
+  text-align: center; /* Aligns text content horizontally in the center */
+  padding: 20px; /* Add padding to the container as needed */
+  margin: 20px;
+  color:black;
+  background-color: white;
+  box-shadow: 0 8px 14px rgb(19, 19, 19);
+}
+
+.threadCardContainer:hover{
+  box-shadow: 0 8px 14px  #8240f5;
+}
+.addThreadContainer {
+  display:flex;
+  direction: row;
+  height: auto;
+  /* border: 1px solid #000; Replace with your desired border properties */
+  border-radius: 10px; /* Adjust the radius to make the corners more or less rounded */
+  text-align: center; /* Aligns text content horizontally in the center */
+  padding: 20px; /* Add padding to the container as needed */
+  margin: 20px;
+  color:black;
+  background-color: white;
+  justify-content: space-between;
+}
+
+.popup-container {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  .popup-body {
+  position: absolute;
+  left: 30%;
+  right: 30%;
+  bottom: 30%;
+  top: 30%;
+  text-align: center;
+  margin: auto;
+  border-radius: 15px;
+  border-color: black;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
