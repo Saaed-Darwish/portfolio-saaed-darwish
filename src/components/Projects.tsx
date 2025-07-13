@@ -5,10 +5,10 @@ import { ExternalLink, Github, Code, Database, Globe } from 'lucide-react';
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application with user authentication, product management, shopping cart, and payment integration.",
+      title: "Divnity",
+      description: "A full-stack community building application with user authentication, matchmaking, forums, and ChatGPT integration.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe API", "JWT"],
+      technologies: ["React", "Java", "MySQL"],
       githubUrl: "https://github.com",
       liveUrl: "https://example.com",
       category: "Full-Stack"

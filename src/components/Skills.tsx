@@ -1,43 +1,43 @@
 
 import React from 'react';
-import { Code, Database, Globe, Server, Smartphone, Terminal } from 'lucide-react';
+import { Code, Laptop, Globe, Server, BrainCircuit, Terminal } from 'lucide-react';
 
 const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend Development",
       icon: <Globe className="w-8 h-8" />,
-      skills: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind CSS", "Vue.js"],
+      skills: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Angular"],
       color: "from-blue-500 to-cyan-500"
     },
     {
       title: "Backend Development",
       icon: <Server className="w-8 h-8" />,
-      skills: ["Node.js", "Python", "Java", "Express.js", "RESTful APIs", "GraphQL"],
+      skills: ["Java", "Spring Boot", "Python", "C#", ".NET", "RESTful APIs", "SQL", "MySQL", "AWS"],
       color: "from-green-500 to-emerald-500"
     },
     {
-      title: "Database & Tools",
-      icon: <Database className="w-8 h-8" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Git", "Docker", "AWS"],
+      title: "Software",
+      icon: <Laptop className="w-8 h-8" />,
+      skills: ["Git", "Postman", "Linux", "IAR", "MS Office", "VSCode", "Eclipse", "MPLAB"],
       color: "from-purple-500 to-pink-500"
     },
     {
       title: "Programming Languages",
       icon: <Code className="w-8 h-8" />,
-      skills: ["Python", "JavaScript", "TypeScript", "Java", "C++", "Go"],
+      skills: ["Python", "Java", "C/C++", "Assembly", "C#"],
       color: "from-orange-500 to-red-500"
     },
     {
-      title: "Mobile Development",
-      icon: <Smartphone className="w-8 h-8" />,
-      skills: ["React Native", "Flutter", "iOS", "Android", "Cross-platform"],
+      title: "Artificial Intelligence",
+      icon: <BrainCircuit className="w-8 h-8" />,
+      skills: ["PyTorch", "Scikit-learn", "Pandas", "TensorFlow", "Keras"],
       color: "from-indigo-500 to-blue-500"
     },
     {
-      title: "DevOps & Other",
+      title: "Other",
       icon: <Terminal className="w-8 h-8" />,
-      skills: ["Linux", "CI/CD", "Testing", "Agile", "Version Control", "Cloud Services"],
+      skills: ["Docker", "Ansible", "Terraform", "Kubernetes", "Jenkins", "Azure"],
       color: "from-yellow-500 to-orange-500"
     }
   ];
@@ -57,7 +57,7 @@ const Skills = () => {
             Technical Skills
           </h2>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
-            A comprehensive toolkit of technologies and languages I use to bring ideas to life
+            My toolkit of technologies and languages that I use to bring ideas to life
           </p>
         </div>
         
