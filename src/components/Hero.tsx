@@ -12,7 +12,7 @@ const Hero = () => {
 
     <div className="container mx-auto px-6 text-center relative z-10">
       <div className="animate-fade-in">
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-scale-in my-0 py-[10px]">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-scale-in my-[10px] py-[10px]">
           Saaed Darwish
         </h1>
         <h2 className="text-2xl md:text-3xl text-gray-300 mb-8 animate-fade-in animation-delay-300">
