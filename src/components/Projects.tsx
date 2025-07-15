@@ -41,7 +41,7 @@ const Projects = () => {
     },
     {
       title: "Rhythm Game on an Embedded System",
-      description: "Interactive rhythm game for an embedded system built for the personal project at the end of EIE pogram by Garmin. Won 1st place in industry choice.",
+      description: "Interactive rhythm game for an embedded system built for the personal project showcase at the end of the EIE pogram by Garmin. Won 1st place in industry choice.",
       image: "/images/eieCover.png",
       technologies: ["IAR", "C", "Embedded Systems"],
       githubUrl: "https://github.com/Saaed-Darwish/razor_sam3u2/blob/Rhythm-Project/firmware_common/application/user_app1.c",

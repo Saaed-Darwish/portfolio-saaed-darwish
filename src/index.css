@@ -107,3 +107,37 @@ All colors MUST be HSL.
 .toast-gradient {
   @apply bg-gradient-to-r from-blue-300 to-purple-300 text-black;
 }
+
+.focused-on-scale {
+  font-size: 100%;
+}
+
+@media (max-width: 456px) {
+  .focused-on-scale {
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 425px) {
+  .focused-on-scale {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .focused-on-scale {
+    font-size: 70%;
+  }
+}
+
+@media (max-width: 360px) {
+  .focused-on-scale {
+    font-size: 60%;
+  }
+}
+
+@media (max-width: 325px) {
+  .focused-on-scale {
+    font-size: 50%;
+  }
+}

@@ -29,7 +29,7 @@ const About = () => {
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-8 -right-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-xl shadow-lg">
-                <div className="text-2xl font-bold">Software Engineering</div>
+                <div className="text-2xl font-bold">Future Software Engineer</div>
                 <div className="text-sm opacity-90">Always Gaining more Knowledge</div>
               </div>
             </div>
@@ -86,7 +86,7 @@ const About = () => {
             
             <div className="bg-slate-800/60 backdrop-blur-sm p-6 rounded-xl border border-slate-700/50">
               <h3 className="text-xl font-bold text-white mb-3">Currently Focused On</h3>
-              <ul className="space-y-2 text-slate-300">
+              <ul className="space-y-2 text-slate-300 focused-on-scale">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
                   <span>Front End Development in React or Angular</span>
