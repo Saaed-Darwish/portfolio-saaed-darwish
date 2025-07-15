@@ -103,3 +103,7 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
   }
 }
+
+.toast-gradient {
+  @apply bg-gradient-to-r from-blue-300 to-purple-300 text-black;
+}

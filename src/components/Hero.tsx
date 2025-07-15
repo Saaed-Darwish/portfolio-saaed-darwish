@@ -19,9 +19,9 @@ const Hero = () => {
           Software Engineering Student at University of Calgary
         </h2>
         <p className="text-lg md:text-xl text-gray-400 mb-12 max-w-2xl mx-auto animate-fade-in animation-delay-500">
-          Software Engineering student at University of Calgary, passionate about creating innovative solutions
-          and exploring cutting-edge technologies across multiple programming languages. Building the future,
-          one line of code at a time
+          Passionate about creating innovative solutions and exploring 
+          cutting-edge technologies across multiple programming languages. 
+          Building the future, one line of code at a time
         </p>
 
         {/* Social Links */}
