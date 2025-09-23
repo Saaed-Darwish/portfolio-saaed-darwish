@@ -24,7 +24,7 @@ const About = () => {
           <div className="space-y-8">
             <div className="relative">
               <img 
-                src="https://media.licdn.com/dms/image/v2/D5603AQGC8z2CQnGxYQ/profile-displayphoto-shrink_800_800/B56ZV8yTAkGQAg-/0/1741555315706?e=1758153600&v=beta&t=n6zZU6F4QRT9fx4qXsyysimwUcE3-I1TdVXsbwYmSYw" 
+                src="/images/profile_linkedin_photo.jpg" 
                 alt="Profile"
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               />
