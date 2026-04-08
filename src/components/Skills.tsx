@@ -7,19 +7,19 @@ const Skills = () => {
     {
       title: "Frontend Development",
       icon: <Globe className="w-8 h-8" />,
-      skills: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Angular"],
+      skills: ["React", "TypeScript", "JavaScript", "HTML/CSS", "Angular", "Vite"],
       color: "from-blue-500 to-cyan-500"
     },
     {
       title: "Backend Development",
       icon: <Server className="w-8 h-8" />,
-      skills: ["Java", "Spring Boot", "Python", "C#", ".NET", "RESTful APIs", "SQL", "MySQL", "AWS"],
+      skills: ["Java", "Spring Boot", "Python", "C#", ".NET", "RESTful APIs", "SQL", "MySQL", "AWS", "FastAPI"],
       color: "from-green-500 to-emerald-500"
     },
     {
       title: "Software",
       icon: <Laptop className="w-8 h-8" />,
-      skills: ["Git", "Postman", "Linux", "IAR", "MS Office", "VSCode", "Eclipse", "MPLAB"],
+      skills: ["Git", "Postman", "Linux", "IAR", "MS Office", "VSCode", "Eclipse", "MPLAB", "MPLAB X IDE"],
       color: "from-purple-500 to-pink-500"
     },
     {

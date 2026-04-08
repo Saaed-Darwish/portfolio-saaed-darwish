@@ -55,6 +55,39 @@ const Projects = () => {
       githubUrl: "https://github.com/Saaed-Darwish/wordle",
       liveUrl: "https://saaed-darwish.github.io/wordle/",
       category: "Game"
+    },
+    {
+      title: "VR Touch Stylus Study",
+      description: "A reaction time application created with OpenGL in order to complete a study between a simple and distracting environment. Key findings were performance was unaffected but percieved difficulty was higher in distracting environments.",
+      image: "/images/vrCover.png",
+      technologies: ["OpenGL", "Visual Studio"],
+      githubUrl: "https://drive.google.com/drive/folders/1rc6TojwH6RKQ4tTt-byOWKg3EWvC_Goe?usp=sharing",
+      category: "Study"
+    },
+    {
+      title: "FinSnap",
+      description: "A startup mobile focused application with my sister; the goal is to aggregrate all user transactions in one place then automatically parse receipts and attach them to the corresponding transaction, also allowing splitting transactions with other users, it is especially for budgeting.",
+      image: "/images/finsnapCover.png",
+      technologies: ["Vite", "React", "FastAPI", "Python", "AI/ML", "Supabase"],
+      liveUrl: "https://finsnapapp.com/",
+      category: "FinTech"
+    },
+    {
+      title: "Biometrics Face ID",
+      description: "Taking the classical software engineering project with a little twist. Recreation of FaceID in python with Haar cascades detection and LBP recognition.",
+      image: "/images/biometricsCover.png",
+      technologies: ["OpenCV", "Python"],
+      githubUrl: "https://github.com/Saaed-Darwish/Biometrics_Face_Detection_and_Recognition",
+      category: "Computer Vision & Biometrics"
+    },
+    {
+      title: "ECG Wearable Accelerator",
+      description: "Simulation of an embedded ECG wearable to calculate heartrate in a DSP accelerator architecture in order to find optimizations especially for battery life.",
+      image: "/images/acceleratorsCover.png",
+      technologies: ["DSP", "Accelerator", "ECG", "Python"],
+      githubUrl: "https://github.com/manbirbriar/ENCM515-ECG-Accelerator",
+      liveUrl: "https://docs.google.com/document/d/1Le1APXfgmTrXcRerk_MNYhFIsKAcEUps/edit?usp=sharing&ouid=110152170339599504397&rtpof=true&sd=true",
+      category: "Processors and Accelerators"
     }
   ];
 
