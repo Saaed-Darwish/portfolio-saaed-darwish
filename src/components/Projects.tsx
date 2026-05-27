@@ -5,6 +5,14 @@ import { ExternalLink, Github, Code, Database, Globe, HardDrive, Gamepad2 } from
 const Projects = () => {
   const projects = [
     {
+      title: "FinSnap",
+      description: "A startup mobile focused application with my sister; the goal is to aggregrate all user transactions in one place then automatically parse receipts and attach them to the corresponding transaction, also allowing splitting transactions with other users, it is especially for budgeting.",
+      image: "/images/finsnapCover.png",
+      technologies: ["Vite", "React", "FastAPI", "Python", "AI/ML", "Supabase"],
+      liveUrl: "https://finsnapapp.com/",
+      category: "FinTech"
+    },
+    {
       title: "Divinity",
       description: "A full-stack community building application with user authentication, matchmaking, forums, and ChatGPT integration.",
       image: "/images/divinityCover.png",
@@ -63,14 +71,6 @@ const Projects = () => {
       technologies: ["OpenGL", "Visual Studio"],
       githubUrl: "https://drive.google.com/drive/folders/1rc6TojwH6RKQ4tTt-byOWKg3EWvC_Goe?usp=sharing",
       category: "Study"
-    },
-    {
-      title: "FinSnap",
-      description: "A startup mobile focused application with my sister; the goal is to aggregrate all user transactions in one place then automatically parse receipts and attach them to the corresponding transaction, also allowing splitting transactions with other users, it is especially for budgeting.",
-      image: "/images/finsnapCover.png",
-      technologies: ["Vite", "React", "FastAPI", "Python", "AI/ML", "Supabase"],
-      liveUrl: "https://finsnapapp.com/",
-      category: "FinTech"
     },
     {
       title: "Biometrics Face ID",

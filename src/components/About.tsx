@@ -4,7 +4,7 @@ import { BookOpen, Award, Coffee, Heart } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: <BookOpen className="w-8 h-8" />, value: "3+", label: "Years of Study" },
+    { icon: <BookOpen className="w-8 h-8" />, value: "BS", label: "Software Engineering at UofC" },
     { icon: <Award className="w-8 h-8" />, value: "15+", label: "Projects Completed" },
     { icon: <Coffee className="w-8 h-8" />, value: "∞", label: "Cups of Coffee" },
     { icon: <Heart className="w-8 h-8" />, value: "100%", label: "Passion for Code" }
@@ -29,7 +29,7 @@ const About = () => {
                 className="w-full max-w-md mx-auto rounded-2xl shadow-2xl"
               />
               <div className="absolute -bottom-8 -right-8 bg-gradient-to-r from-blue-600 to-purple-600 text-white p-6 rounded-xl shadow-lg">
-                <div className="text-2xl font-bold">Future Software Engineer</div>
+                <div className="text-2xl font-bold">Software Engineer</div>
                 <div className="text-sm opacity-90">Always Gaining more Knowledge</div>
               </div>
             </div>
@@ -63,14 +63,14 @@ const About = () => {
             
             <div className="space-y-4 text-slate-300 text-lg leading-relaxed">
               <p>
-                I'm a passionate software engineering student with a love for creating the 
+                I'm a passionate software engineer with a love for creating the 
                 very technology that I am obsessed with. My journey started with curiosity 
                 about how video games work and has evolved into a deep appreciation for 
                 elegant code and user-centered design.
               </p>
               
               <p>
-                Throughout my academic journey, I've worked with diverse programming languages 
+                Throughout my software journey, I've worked with diverse programming languages 
                 and frameworks, from building responsive web applications to creating a game on an 
                 embedded system and experimenting with artificial intelligence. Each project teaches me 
                 something new and fuels my excitement for what's possible.
@@ -89,19 +89,19 @@ const About = () => {
               <ul className="space-y-2 text-slate-300 focused-on-scale">
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full"></div>
-                  <span>Front End Development in React or Angular</span>
+                  <span>Front End Development</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
-                  <span>Machine Learning and AI applications</span>
+                  <span>Machine Learning and AI</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-green-400 rounded-full"></div>
-                  <span>Back End Development in .NET or Java Related</span>
+                  <span>Back End Development</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-orange-400 rounded-full"></div>
-                  <span>Cloud architecture and DevOps practices</span>
+                  <span>Cloud and DevOps</span>
                 </li>
               </ul>
             </div>
