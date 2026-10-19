@@ -13,6 +13,21 @@ const Projects = () => {
       category: "FinTech"
     },
     {
+      title: "Daymark",
+      description: "An AI-powered professional growth journal inspired by a conversation during my Amazon interview loop. Enables users to document daily work through Quick Logs and structured CARL reflections, connect entries into project histories, and generate evidence-backed reports for manager meetings, performance evaluations, and career development. Features workday streaks to encourage consistent reflection.",
+      image: "/images/daymarkCover.png",
+      technologies: [
+        "React",
+        "TypeScript",
+        "TanStack Start",
+        "Supabase",
+        "Gemini AI",
+        "Netlify"
+      ],
+      liveUrl: "https://getdaymark.netlify.app/",
+      category: "AI/Productivity"
+    },
+    {
       title: "Divinity",
       description: "A full-stack community building application with user authentication, matchmaking, forums, and ChatGPT integration.",
       image: "/images/divinityCover.png",
