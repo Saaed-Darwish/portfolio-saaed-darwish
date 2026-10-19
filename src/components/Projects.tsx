@@ -24,7 +24,7 @@ const Projects = () => {
         "Gemini AI",
         "Netlify"
       ],
-      liveUrl: "https://getdaymark.netlify.app/",
+      liveUrl: "https://daymarkjournal.netlify.app/",
       category: "AI/Productivity"
     },
     {
